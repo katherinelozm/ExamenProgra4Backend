@@ -14,7 +14,7 @@ server.connection({
               }
 });
 
-mongoose.connect('mongodb://zsnake:password@ds049104.mongolab.com:49104/angular-scaffold');
+mongoose.connect('mongodb://santa@northpole.org:naughtykid123@ds029605.mongolab.com:29605/santaclaus');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
@@ -26,7 +26,7 @@ server.register([inert, auth], function(err){
 
   server.auth.strategy('session', 'cookie', {
     password: 'secretpasswordforencryption',
-    cookie: 'angular-scaffold-cookie',
+    cookie: 'santaclaus-cookie',
     ttl: 24 * 60 * 60 * 1000, // Set session to 1 day
     isSecure: false
   });
