@@ -1,4 +1,4 @@
-var gift = require('../schemas/gifr');
+var gift = require('../schemas/gift');
 
 exports.getGifts = {
   auth: {
